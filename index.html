@@ -6,10 +6,39 @@
         <!-- Style -->
         <link rel="stylesheet" href="./style.css" />
         <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
 
         <title>####</title>
     </head>
     <body>
+        <header>
+            <div class="container">
+                <div class="header__inner"><h1>Rick and Morty</h1></div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main__inner">
+                    <div class="search__bar">
+                        <input
+                            type="text"
+                            id="name__input"
+                            placeholder="Search by name..."
+                        />
+                        <button id="search__btn">
+                            <img src="./assets/search-icon.svg" alt="Search" />
+                        </button>
+                    </div>
+                    <div id="persons__block"></div>
+                </div>
+                <div id="none__block"></div>
+            </div>
+        </main>
         <script src="./script.js"></script>
     </body>
 </html>
